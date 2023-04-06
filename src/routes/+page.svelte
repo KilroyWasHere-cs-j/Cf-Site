@@ -6,6 +6,7 @@
 	import Buffer from '$lib/Buffer.svelte';
 	import Paragraph from '$lib/Paragraph.svelte';
 	import PageHeader from '../lib/PageHeader.svelte';
+	import ImageBox from '../lib/ImageBox.svelte';
 
 	const rows = 8;
 	const cols = 9;
@@ -32,7 +33,7 @@
 	<Box width=100 height=100 imagePath="https://images.unsplash.com/photo-1600267188229-1dd3dd776737?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ybGQlMjB3YXIlMjAyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
 	<Buffer width=100 height=100/>
 	<Buffer width=100 height=100/>
-	<YearBreak year="War start"/>
+	<YearBreak year="War starts"/>
 	<Box width=100 height=600>
 		<Paragraph text="1933 Adolf Hitler came to power. During the years between 1933 - 1939, the Nazi party worked on laying the ground work for the percicution of Jews, Homosexuals, Roma, and many other groups."/>
 		<Paragraph text="These laws allowed/promoted the boycott of jewish businesses, Evian confrence, Kristallnact, and forced emigration."/>
@@ -44,6 +45,11 @@
 	<Box width=100 height=600>
 		<Header header="Germany annexes Czechoslovakia"/>
 		<Header header="ST. Louis sails"/>
+		<br>
+		<ImageBox src="https://www.facinghistory.org/sites/default/files/styles/social_image_1200x630_1x/public/2022-06/Holocaust_1939_RefugeesAboardTheStLouis_%20FH229460.jpg?h=8911ddd7&itok=lQ6lcvlf" width=80 height=20>
+			<br>
+			<p>Informational text</p>
+		</ImageBox>
 	</Box>
 	<YearBreak year=1940/>
 	<Box width=100 height=600>
