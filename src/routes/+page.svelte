@@ -7,6 +7,7 @@
 	import Paragraph from '$lib/Paragraph.svelte';
 	import PageHeader from '../lib/PageHeader.svelte';
 	import ImageBox from '../lib/ImageBox.svelte';
+	import VBuffer from '../lib/VBuffer.svelte';
 
 	const rows = 8;
 	const cols = 9;
@@ -25,12 +26,19 @@
 	  </style>
 </svelte:head>
 
+<!--! Backgorund-->
+<!--https://images.unsplash.com/photo-1671628344495-e6bb17e0dc8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dHJhaW50cmFja3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60-->
+
+<!--? Website I'm basing this off of-->
 <!--https://www.nytimes.com/interactive/2022/05/20/world/americas/enslaved-haiti-debt-timeline.html?unlocked_article_code=gbBkXR8Dvzax6Aa01PxdxbCTQq-VamFCGi05ArKVOONA4iTnd1dRu2B5Hcjdh0tG0OtN24QFYtC5VO2uqqqO3uaCqMpfUEQu08xCCrZ3vGqHJlJulDN2BAnwjRTzSw4-zYq5r0oS0uuFplQiOt12oMgbAun5EqbeR0THpQTGs7oPDA-OyayrutjQJKbTcpO2hfn2oV_SaTiM_TK02B8r6slCE0pkLbscRjoc50ru6pnT7ijxx8Tm2qWifCAcq5WGyOOPd3A2JUvYwuVSCb1ne62TKwtj5JNigHdsaqW4_gy5CKE44-NBTvWoe5tk3W_S9PpRcU5eBxKC0qnrguleu4zdF0yUvW3_V0y56Sv-ElsAs8piSVRIJlUQLTGp&smid=url-share-->
 
 
 <div class="bg-cover" style="background-image: url({src}); height: 880px">
-	<PageHeader header="Effect of war on genocide" subheader="September 1, 1939 – September 2, 1945" subtext="Gabriel Tower"/>
-	<Box width=100 height=100 imagePath="https://images.unsplash.com/photo-1600267188229-1dd3dd776737?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ybGQlMjB3YXIlMjAyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+	<div>
+		<div class="h-80"/>
+		<PageHeader header="Effect of war on genocide" subheader="September 1, 1939 – September 2, 1945" subtext="Gabriel Tower"/>
+		<Box width=100 height=100 imagePath="https://images.unsplash.com/photo-1600267188229-1dd3dd776737?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ybGQlMjB3YXIlMjAyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+	</div>
 	<Buffer width=100 height=100/>
 	<Buffer width=100 height=100/>
 	<YearBreak year="War starts"/>
@@ -45,11 +53,11 @@
 	<Box width=100 height=600>
 		<Header header="Germany annexes Czechoslovakia"/>
 		<Header header="ST. Louis sails"/>
-		<br>
-		<ImageBox src="https://www.facinghistory.org/sites/default/files/styles/social_image_1200x630_1x/public/2022-06/Holocaust_1939_RefugeesAboardTheStLouis_%20FH229460.jpg?h=8911ddd7&itok=lQ6lcvlf" width=80 height=20>
-			<br>
+		<VBuffer height="10"/>
+		<ImageBox src="https://www.facinghistory.org/sites/default/files/styles/social_image_1200x630_1x/public/2022-06/Holocaust_1939_RefugeesAboardTheStLouis_%20FH229460.jpg?h=8911ddd7&itok=lQ6lcvlf" width=80 height=80>
 			<p>Informational text</p>
 		</ImageBox>
+		<div class="w-24 h-1"/>
 	</Box>
 	<YearBreak year=1940/>
 	<Box width=100 height=600>
@@ -59,14 +67,22 @@
 	<YearBreak year=1941/>
 	<Box width=100 height=600>
 		<Header header="Mass Murder begin at chelmno"/>
-		<Header header="Operation Reinhard"/>
+		<Header header="Germany invades Yugoslavia, Greece, and Soviet Union"/>
 	</Box>
 	<YearBreak year=1942/>
-	<Box width=100 height=600/>
+	<Box width=100 height=600>
+		<Header header="Wannsee Conference"/>
+		<Header header="Operation Reinhard"/>
+	</Box>
 	<YearBreak year=1943/>
-	<Box width=100 height=600/>
+	<Box width=100 height=600>
+		<Header header="First transport of Sinit/Roma to Auschwitz"/>
+		<Header header="Warsaw ghetto uprising begins"/>
+	</Box>
 	<YearBreak year=1944/>
-	<Box width=100 height=600/>
+	<Box width=100 height=600>
+		<Header header="FDR creates war refugee board"/>
+	</Box>
 	<YearBreak year=1945/>
 	<Box width=100 height=200 header="War is over"/>
 	<PageEnder/>
