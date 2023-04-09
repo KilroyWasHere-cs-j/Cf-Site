@@ -7,7 +7,6 @@
 	import Paragraph from '$lib/Paragraph.svelte';
 	import PageHeader from '../lib/PageHeader.svelte';
 	import ImageBox from '../lib/ImageBox.svelte';
-	import VBuffer from '../lib/VBuffer.svelte';
 
 	const rows = 8;
 	const cols = 9;
@@ -30,7 +29,7 @@
 <!--https://images.unsplash.com/photo-1671628344495-e6bb17e0dc8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dHJhaW50cmFja3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60-->
 
 <!--? The website I'm basing this off of-->
-<!--https://www.nytimes.com/interactive/2022/05/20/world/americas/enslaved-haiti-debt-timeline.html?unlocked_article_code=gbBkXR8Dvzax6Aa01PxdxbCTQq-VamFCGi05ArKVOONA4iTnd1dRu2B5Hcjdh0tG0OtN24QFYtC5VO2uqqqO3uaCqMpfUEQu08xCCrZ3vGqHJlJulDN2BAnwjRTzSw4-zYq5r0oS0uuFplQiOt12oMgbAun5EqbeR0THpQTGs7oPDA-OyayrutjQJKbTcpO2hfn2oV_SaTiM_TK02B8r6slCE0pkLbscRjoc50ru6pnT7ijxx8Tm2qWifCAcq5WGyOOPd3A2JUvYwuVSCb1ne62TKwtj5JNigHdsaqW4_gy5CKE44-NBTvWoe5tk3W_S9PpRcU5eBxKC0qnrguleu4zdF0yUvW3_V0y56Sv-ElsAs8piSVRIJlUQLTGp&smid=url-share-->
+<!--https://www.nytimes.com/interactive/2022/05/20/world/americas/enslaved-haiti-debt-timeline.html?unlocked_article_code=gbBkXR8Dvzax6Aa01PxdxbCTQq-VamFCGi05ArKVOONA4iTnd1dRu2B5Hcjdh0tG0OtN24QFYtC5VO2uqqqO3uaCqMpfUEQu08xCCrZ3vGqHJlJulDN2BAnwjRTzSw4-zYq5r0oS0uuFplQiOt12oMgbAun5EqbeR0THpQTGs7oPDA-OyayrutjQJKbTcpO2hfn2oV_SaTiM_TK02B8r6slCE0pkLbscRjoc50ru6pnT7ijxx8Tm2qWifCAcq5WGyOOPd3A2JUvYwuVSCb1ne62TKwtj5JNigHdsaqW4_gy5CKE44-NBTvWoe5tk3W_S9PpRcU5eBxKC0qnrguleu4zdF0yUvW3_V0y56Sv-ElsAs8piSVRIJlUQLTGp&xlid=url-share-->
 
 
 <div class="bg-cover" style="background-image: url({src}); height: 880px">
@@ -54,15 +53,15 @@
 		<Header header=" Germany annexes Czechoslovakia"/>
 		<ImageBox src="https://encyclopedia.ushmm.org/images/large/11282013-a4f5-4f6e-8462-32296069c3cd.jpg" width=80 height=100>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">In 1933 Germany demanded that ethnic Germans in Czechoslovakia be "returned" to Germany. This also included the 
+			<p class="text-2xl">In 1933 Germany demanded that ethnic Germans in Czechoslovakia be "returned" to Germany. This also included the 
 				land that they lived on. The Czechs refused and in 1938 under the direction of Hitler Germany invaded. The Germans annexed the Sudetenland. The Munich Pact was signed in 1938. 
 				The pact allowed Germany to annex the Sudetenland in exchange for promised peace from Hitler.
 			</p>
 		</ImageBox>
 		<Header header=" ST. Louis sails"/>
-		<ImageBox src="https://www.facinghistory.org/sites/default/files/styles/social_image_1200x630_1x/public/2022-06/Holocaust_1939_RefugeesAboardTheStLouis_%20FH229460.jpg?h=8911ddd7&itok=lQ6lcvlf" width=10 height=10>
+		<ImageBox src="https://www.facinghistory.org/sites/default/files/styles/social_image_1200x630_1x/public/2022-06/Holocaust_1939_RefugeesAboardTheStLouis_%20FH229460.jpg?h=8911ddd7&itok=lQ6lcvlf" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">In May 1939, ~900 Jews fled Germany aboard a curise liner. The ship in question was called the SS St. Louis.
+			<p class="text-2xl">In May 1939, ~900 Jews fled Germany aboard a curise liner. The ship in question was called the SS St. Louis.
 				The ship was turned away from Cuba, Canada, and the United States. The ship was forced to return to Europe. 
 				Many of the passengers were sent to concentration camps. "We didn't really know where we were heading, or how we would cope when we got there." - Gisela Feldman.
 				With the fear of death and persecution back in mainland Europe, many were looking for a safe haven. Most of the passager would never see close family ever again.
@@ -75,14 +74,31 @@
 		<Header header=" Germany invades Poland"/>
 		<ImageBox src="" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">September-October 1939, German forces implemented the infamous BiltizKreig (lightning war) and invaded Poland. The invasion was a success and the Germans quickly overran Poland. The Polish army was quickly defeated and the Polish government fled.
+			<p class="text-2xl">September-October 1939, German forces implemented the infamous BiltizKreig (lightning war) and invaded Poland. The invasion was a success and the Germans quickly overran Poland. The Polish army was quickly defeated and the Polish government fled.
 				Poland did have a noticeable resistance during and after the invasion. The Polish resistance was able to slow down the German advance. Note: Germany also invaded Norway and Denmark shortly after.</p>
 		</ImageBox>
 		<Header header="First prisoners arrive at Auschwitz"/>
 		<ImageBox src="https://tinyurl.com/yp82zfjw" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">Near the Polish town Oświęcim, Nazi SS units established and large concentration camp. This camp was called Auschwitz.</p>
-			<p class="text-2sm">The first prisoners were mostly Christain and Jewish men for Germany and Poland. Mostly for political reasons.</p>
+			<p class="text-2xl">Near the Polish town Oświęcim, Nazi SS units established and large concentration camp. This camp was called Auschwitz.</p>
+			<p class="text-2xl">The first prisoners were mostly Christain and Jewish men for Germany and Poland. Mostly for political reasons.</p>
+			<br>
+			<h1 class="text-4xl">People moved through Auschwitz from 1942 - 1944</h1>
+			<br>
+			<p class="text-2xl">
+				Hungary: 426,000
+				Poland: 300,000
+				France: 69,000
+				Netherlands: 60,000
+				Greece: 55,000
+				Bohemia and Moravia: 46,000
+				Slovakia: 27,000
+				Belgium: 25,000
+				Yugoslavia: 10,000
+				Italy: 7,500
+				Norway: 690
+				Other (including concentration camps): 34,000
+			</p>
 		</ImageBox>
 	</Box>
 	<YearBreak year=1941/>
@@ -90,17 +106,17 @@
 		<Header header=" Mass Murder begins at Chelmno"/>
 		<ImageBox src="https://tinyurl.com/2bfetkhc" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">In Poland the Nazi SS opened Chelmno killing center. Jews, Poles, POWS, and Roma were all killed. Chelmno was the first stationary facility to use gas.</p>
+			<p class="text-2xl">In Poland the Nazi SS opened Chelmno killing center. Jews, Poles, POWS, and Roma were all killed. Chelmno was the first stationary facility to use gas.</p>
 			<br>
-			<p class="text-2sm">172,000 people were killed.</p>
+			<p class="text-2xl">172,000 people were killed.</p>
 		</ImageBox>
 		<Header header=" Germany invades Yugoslavia, Greece, and the Soviet Union"/>
 		<ImageBox src="https://tinyurl.com/yfa5trps" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">Yugoslavia was aligned with the Axis but refused to allow the flow of German troops through Yugoslavia.</p>
-			<p class="text-2sm">So the Germans invaded Yugoslavia on April 6, 1941.</p>
+			<p class="text-2xl">Yugoslavia was aligned with the Axis but refused to allow the flow of German troops through Yugoslavia.</p>
+			<p class="text-2xl">So the Germans invaded Yugoslavia on April 6, 1941.</p>
 			<br>
-			<p class="text-2sm">In Aptil Germann, Italy, Bulgarian and Hungarian units took over Greece with relative ease. Greek resistance would continue until June of that year.</p>
+			<p class="text-2xl">In April German, Italy, Bulgarian and Hungarian units took over Greece with relative ease. Greek resistance would continue until June of that year.</p>
 		</ImageBox>
 	</Box>
 	<YearBreak year=1942/>
@@ -108,28 +124,31 @@
 		<Header header=" Wannsee Conference"/>
 		<ImageBox src="https://encyclopedia.ushmm.org/images/large/ca3ed0a2-209b-43ca-868b-4d47dcc41dbb.jpg" width=40 height=40>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">The Wannsee conference (held in Wannsee Villa in a Berlin suburb) was a meeting of Nazi party officials. The purpose of the meeting was to discuss the logistics of the "Final Solution"</p>
-			<p class="text-2sm">The "Final Solution" was a euphemism for the mass murder of European Jews.</p>
+			<p class="text-2xl">The Wannsee conference (held in Wannsee Villa in a Berlin suburb) was a meeting of Nazi party officials. The purpose of the meeting was to discuss the logistics of the "Final Solution"</p>
+			<p class="text-2xl">The "Final Solution" was a euphemixl for the mass murder of European Jews. There was no question whether or not to go through with the plan, the "Final Solution" was already planned.</p>
+			<p class="text-2xl">The plan didn't just include German occupied territory it extended to United Kingdom, Switzerland, Ireland, Sweden, etc... </p>
 		</ImageBox>
 		<Header header=" Operation Reinhard"/>
 		<ImageBox src="https://tinyurl.com/2rrkj5un" width=40 height=40>
 		</ImageBox>
 		<div class="w-24 h-1 bg-gray-500 mt-4"/>
-		<p class="text-2sm">The code name for a plan to kill approximately two million Jews. Reinhard has been in the works since 1942, only 1.5 million Jews were killed during the operation.</p>
+		<p class="text-2xl">The code name for a plan to kill approximately two million Jews. Reinhard has been in the works since 1942, only 1.5 million Jews were killed during the operation.</p>
+		<p class="text-2xl">Operation Reinhard had a connection with Operation T4 (Euthanaisa Program). Most of the personal in the Reinhard program came for T4, thus they had intimate knowledge gas.</p>
 	</Box>
 	<YearBreak year=1943/>
 	<Box width=100 height=600>
 		<Header header="First transport of Sinit/Roma to Auschwitz"/>
 		<ImageBox src="https://tinyurl.com/3tetenur" width=100 height=100>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">In 1943 the first groups of Sinit/Roma started arriving at Auschwitz-Birkenau. They were originally placed in family camps and kept together.</p>
+			<p class="text-2xl">In 1943 the first groups of Sinit/Roma started arriving at BIIe sector.</p>
+			<p class="text-2xl">Upon arriving they were not sujected to selection and families reminded together. The BIIe section was still underconstruction at the time and do to overcrowding lead to unhygenic conditions.</p>
 		</ImageBox>
 		<Header header=" German defeat at Stalingrad"/>
 		<ImageBox src="https://tinyurl.com/58u8m7ms" width=100 height=100>
 			<div class="w-24 h-1 bg-gray-500 mt-4"/>
-			<p class="text-2sm">The German defeat at Stalingrad was a major turning point in the war. The Germans were forced to retreat and the Soviets were able to take back the city.<p>
+			<p class="text-2xl">The German defeat at Stalingrad was a major turning point in the war. The Germans were forced to retreat and the Soviets were able to take back the city.<p>
 			<br>
-			<p class="text-2sm">Battle lasted seven months the goal was to capture the Soviet city Stalingrad (now called Volgograd). Stalingrad was the location of much of the Soviet military infrastructure.</p>
+			<p class="text-2xl">Battle lasted seven months the goal was to capture the Soviet city Stalingrad (now called Volgograd). Stalingrad was the location of much of the Soviet military infrastructure.</p>
 		</ImageBox>
 	</Box>
 	<YearBreak year=1944/>
@@ -137,15 +156,15 @@
 		<div class="w-24 h-1 mt-4"/>
 		<Header header=" FDR creates war refugee board"/>
 		<div class="w-24 h-1 bg-gray-500 mt-4"/>
-		<p class="text-2sm">After pressure from Congress then Roosevelt created an agency whose sole job was to help Jews directly affected by the Holocaust. This simplified the support process, allowing the US to better help those affected.</p>
+		<p class="text-2xl">After pressure from Congress then Roosevelt created an agency whose sole job was to help Jews directly affected by the Holocaust. This simplified the support process, allowing the US to better help those affected.</p>
 		<div class="w-24 h-1 mt-4"/>
 		<Header header=" War ending"/>
 		<div class="w-24 h-1 bg-gray-500 mt-4"/>
-		<p class="text-2sm">With the surrender of Italy, D-Day, and the liberation of Auschwitz and Buchenwald by the Soviets and the US respectively. Leading to the downfall of the Nazi regime.</p>
+		<p class="text-2xl">With the surrender of Italy, D-Day, and the liberation of Auschwitz and Buchenwald by the Soviets and the US respectively. Leading to the downfall of the Nazi regime.</p>
 	</Box>
 	<YearBreak year=1945/>
 	<Box width=100 height=200 header=" War is over">
-		<p class="text-2sm">The war in Europe ended on May 8th, 1945. The war in the Pacific ended on August 15th, 1945.</p>
+		<p class="text-2xl">The war in Europe ended on May 8th, 1945. The war in the Pacific ended on August 15th, 1945.</p>
 	</Box>
 	<PageEnder/>
 </div>
