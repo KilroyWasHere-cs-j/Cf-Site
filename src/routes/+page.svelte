@@ -162,7 +162,7 @@
 	</Box>
 	<YearBreak year=Refelection/>
 	<Box width=100 height=200>
-		<p class="text-2xl">The goal of this website is to show the effect of war on genocide.</p>
+		<p class="text-2xl">The goal of this website is to show the effect of war on genocide. I attempted this by showing the progression of the war against the Holocaust. From looking at the timeline it becomes clear that as the war progressed so did in the injustices and persecution. As the Nazi saw success in the early part of the war we saw the opening of concentration camps, and the relocation of groups. The success of the Nazi party were able to dedicate more manpower and resources to “The Final Solution”. February 2, 1943 the Germans were defeated at Stalingrad this marked the turning point in the war, and in September of that year Italy surrendered. At this point we see the rapid deterioration of the Nazi regime. Uprisings in Warsaw and Sobibor combined with the increasing pressure from the Allies was too much for the Axis to handle. For this we can see that war greatly affects the amount of available resources, as the frontline need increases the supply for other activities decreases.</p>
 	</Box>
 	<PageEnder/>
 </div>
